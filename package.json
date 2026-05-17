@@ -1,0 +1,27 @@
+{
+  "name": "@nakopay/plugin-discord",
+  "version": "1.0.0",
+  "description": "NakoPay Discord bot - invoices, tips, and payment notifications via slash commands",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "register": "tsx src/register.ts",
+    "test": "vitest run",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@nakopay/sdk": "^0.2.0",
+    "discord.js": "^14.14.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
